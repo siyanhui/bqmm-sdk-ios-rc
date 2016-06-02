@@ -7,8 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
-@class MMTextParser;
+#import "BQMM.h"
 
 @interface MMTextParser (ExtData)
 
