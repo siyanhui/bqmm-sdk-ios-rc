@@ -14,17 +14,17 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '7.0'
   s.requires_arc = true
 
-  s.source_files = '*/BQMM.framework/Headers/*.h', '*/*.{h,m}', '*/RongIMKit.framework/Headers/*.h'
+  s.source_files = '*/BQMM.framework/Headers/*.h', '*/RongIMKit.framework/Headers/*.h'
 
-  s.resources = [ '*/BQMM.bundle', '*/BQMM_EXT/*.png', '*/RongCloud.bundle', '*/en.lproj', '*/zh-Hans.lproj' ]
+  s.resources = [ '*/BQMM.bundle', '*/RongCloud.bundle', '*/en.lproj', '*/zh-Hans.lproj' ]
 
   s.xcconfig  = { 'OTHER_LDFLAGS' => '-ObjC' }
 
-  s.vendored_frameworks = '*/BQMM.framework', '*/RongIMKit.framework', '*/RongIMLib.framework'
+  s.vendored_frameworks = ['*/BQMM.framework', '*/RongIMKit.framework', '*/RongIMLib.framework']
 
-  s.vendored_libraries = '*/*.a'
+  s.vendored_libraries = ['*/*.a']
 
-  s.libraries = 'z', 'xml2', 'stdc++', 'sqlite3', 'c++', 'c++abi'
+  s.libraries = ['z', 'xml2', 'stdc++', 'sqlite3', 'c++', 'c++abi']
 
-  s.frameworks = 'AssetsLibrary', 'MapKit', 'ImageIO', 'CoreLocation', 'SystemConfiguration', 'QuartzCore', 'OpenGLES', 'CoreVideo', 'CoreTelephony', 'CoreMedia', 'CoreAudio', 'CFNetwork', 'AudioToolbox', 'AVFoundation', 'UIKit', 'CoreGraphics'
+  s.frameworks = ['AssetsLibrary', 'MapKit', 'ImageIO', 'CoreLocation', 'SystemConfiguration', 'QuartzCore', 'OpenGLES', 'CoreVideo', 'CoreTelephony', 'CoreMedia', 'CoreAudio', 'CFNetwork', 'AudioToolbox', 'AVFoundation', 'UIKit', 'CoreGraphics']
 end
