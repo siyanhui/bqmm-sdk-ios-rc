@@ -10,10 +10,16 @@
 
 @protocol MMTextViewDelegate;
 
-
 @interface MMTextView : UITextView<UIGestureRecognizerDelegate>
 
 @property (nonatomic, weak) id <MMTextViewDelegate> clickActionDelegate;
+
+/*!
+ 是否关闭菜单
+ 
+ @discussion 默认值为NO。
+ */
+@property(nonatomic, assign) BOOL disableActionMenu;
 
 /**
  *  字体
@@ -78,5 +84,3 @@
 - (void)mmTextView:(MMTextView *)textView didTapTextView:(NSString *)content;
 
 @end
-
-
