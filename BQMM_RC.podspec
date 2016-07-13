@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "BQMM_RC"
-  s.version          = "1.6.0"
+  s.version          = "1.6.1"
   s.summary          = "BQMM RongCloud SDK"
   s.description      = <<-DESC
                           The developer can use this SDK to integrate more and more emoji, such as some static image emoji, or animated emoji
