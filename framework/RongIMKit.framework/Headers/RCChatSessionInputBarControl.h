@@ -279,7 +279,7 @@ typedef NS_ENUM(NSInteger, KBottomBarStatus) {
  @param inputControl 当前输入工具栏
  @param text         当前输入框中国的文本内容
  */
-- (void)didTouchKeyboardReturnKey:(RCChatSessionInputBarControl *)inputControl text:(NSString *)text;
+- (void)didTouchKeyboardReturnKey:(UITextView *)textView;
 
 /*!
  点击表情按钮的回调
